@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-//import 'tachyons';
-import Card from './Card';
+import 'tachyons';
+import CardList from './CardList';
 import * as serviceWorker from './serviceWorker';
-//import { robots } from './robots';
+import { robots } from './robots';
 
-ReactDOM.render(<Card marita={`aleluia Deus de Abraao, Aleluia Deus de Jaco Aleluia Deus de esaque aleluuuui`}/>,
+ReactDOM.render(<CardList robots={robots}/>,
         
  document.getElementById('root'));
 
