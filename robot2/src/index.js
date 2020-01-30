@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import 'tachyons';
 //import CardList2 from './CardList2';
-import App from './App';
+import App2 from './App2';
 import * as serviceWorker from './serviceWorker';
 
 
-ReactDOM.render(<App/>,
+ReactDOM.render(<App2/>,
         
  document.getElementById('root'));
 
