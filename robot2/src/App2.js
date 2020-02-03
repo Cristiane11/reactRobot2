@@ -13,18 +13,18 @@ class App2 extends Component{
             searchfield:''  
         }
     }
-    onSearchChange(event){
-        console.log(event.target.value);
-        const filteredRobots= this.state.robots.filter(robots =>{
-            return robots.name.toLocaleLowerCase().includes(this.state.searchfield.toLocaleLowerCase())
-        })
+    onSearchChange=(event)=>{
+        this.setState({searchfield:event.target.value})   
     }
-    render(){  
+    render(){ 
+        const filteredRobots = this.state.robots.filter(robots =>{
+            return robots.name.toLocaleLowerCase().includes(this.state.searchfield.toLocaleLowerCase())
+        }) 
         return(
         <div className='tc'>
         <h1>Robot Friends</h1>
         <SearchBox searchChange={this.onSearchChange}/>
-        <CardList2 robots={this.state.robots}/>
+        <CardList2 robots={filteredRobots}/>
         {/*before state<CardList2 robots={robots}/>*/}
     </div>
     );
