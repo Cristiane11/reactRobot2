@@ -15,6 +15,9 @@ class App2 extends Component{
     }
     onSearchChange(event){
         console.log(event.target.value);
+        const filteredRobots= this.state.robots.filter(robots =>{
+            return robots.name.toLocaleLowerCase().includes(this.state.searchfield.toLocaleLowerCase())
+        })
     }
     render(){  
         return(
