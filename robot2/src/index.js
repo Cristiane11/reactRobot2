@@ -4,7 +4,7 @@ import './index.css';
 import 'tachyons';
 //import CardList2 from './CardList2';
 import App2 from './App2';
-import * as serviceWorker from './serviceWorker';
+
 
 
 ReactDOM.render(<App2/>,
@@ -14,4 +14,3 @@ ReactDOM.render(<App2/>,
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
